@@ -29,7 +29,7 @@
             x=Math.floor(x/10);
             console.log(reverseNumber, x)
         }
-        if (reverseNumber === x || Math.floor(reverseNumber/10) === x) {
+        if (reverseNumber === x || Math.floor(reverseNumber/10) === x) { // "OR" statemnt to elimnate odd digits scenario
             console.log(Math.floor(reverseNumber/10))
             return true;
         } else {
@@ -367,7 +367,7 @@ console.log(mergeTwoLists(list1, list2)) */
 
 // 26. Remove Duplicates from Sorted Array
 
-nums = [1,1,2,5,5,9,10]
+/* nums = [1,1,2,5,5,9,10]
 
 var removeDuplicates = function(nums) {
     let i = 0;
@@ -380,4 +380,33 @@ var removeDuplicates = function(nums) {
     return ++i;
 };
 
-console.log(removeDuplicates(nums))
+console.log(removeDuplicates(nums)) */
+
+
+/* console.log(a + "got the job");
+let a = 10;
+console.log(a + "10"); */
+
+/* test for palindrome */
+
+/* let a = 7771777;
+
+let isPalindrome = (a) => {
+    let reverseNumber = 0;
+    if (a<0 || Math.floor(a%10)==0) {
+        return "not a plaindrome"
+    } else {
+        while(a>reverseNumber) {
+            reverseNumber = reverseNumber * 10 + a % 10;
+            a = Math.floor(a/10);
+        }
+    }
+
+    if(reverseNumber == a || Math.floor(reverseNumber/10) == a) {
+        return "is palindrome"
+    } else {
+        return "not a plaindrome"
+    }
+}
+
+console.log(isPalindrome(a)); */
